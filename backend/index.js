@@ -1,12 +1,12 @@
 import express from 'express';
 import cors from 'cors';
 import 'dotenv/config';
-import connectDb from '../config/db.js';
-import connectCloudinary from '../config/cloudinary.js';
-import userRouter from '../routes/userRoutes.js';
-import productRouter from '../routes/productRoutes.js';
-import cartRouter from '../routes/cartRoutes.js';
-import orderRouter from '../routes/orderRoutes.js';
+import connectDb from './config/db.js';
+import connectCloudinary from './config/cloudinary.js';
+import userRouter from './routes/userRoutes.js';
+import productRouter from './routes/productRoutes.js';
+import cartRouter from './routes/cartRoutes.js';
+import orderRouter from './routes/orderRoutes.js';
 
 
 // App Config
