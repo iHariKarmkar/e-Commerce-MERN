@@ -57,24 +57,24 @@ const Orders = () => {
             <div>
               <div className="flex flex-col gap-5 items-start sm:flex-row sm:justify-between sm:items-center px-2 py-2">
                 <div>
-                  <p className="mt-1">
+                  <p className="mt-1 text-xs sm:text-base">
                     Order Id:{" "}
                     <span className="text-gray-400">{order.orderId}</span>
                   </p>
-                  <p className="">
+                  <p className="text-xs sm:text-base">
                     Date:{" "}
                     <span className="text-gray-400">
                       {new Date(order.date).toLocaleDateString()}
                     </span>
                   </p>
-                  <p className="">
+                  <p className="text-xs sm:text-base">
                     Total Amount:{" "}
                     <span className="text-gray-400">
                       {currency}
                       {order.amount}
                     </span>
                   </p>
-                  <p className="">
+                  <p className="text-xs sm:text-base">
                     Payment:{" "}
                     <span className="text-gray-400">{order.paymentMethod}</span>
                   </p>

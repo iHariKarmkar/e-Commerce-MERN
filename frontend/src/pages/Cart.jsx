@@ -95,12 +95,14 @@ const Cart = () => {
         <div className="w-full sm:w-[450px] ">
           {cartData.length > 0 && <CartTotal />}
           <div className="w-full text-end">
-            <button
-              onClick={() => navigate("/place-order")}
-              className="bg-black text-white text-sm my-8 px-8 py-3 uppercase"
-            >
-              proceed to checkout
-            </button>
+            {cartData.length > 0 && (
+              <button
+                onClick={() => navigate("/place-order")}
+                className="bg-black text-white text-sm my-8 px-8 py-3 uppercase"
+              >
+                proceed to checkout
+              </button>
+            )}
           </div>
         </div>
       </div>
